@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: auth-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create # `create` to create the schema, `update` to update the schema, `validate` to validate the schema, and `none` to do nothing
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 9898
+  servlet:
+    context-path: /auth
+
+jwt:
+  secret: 357638792F423F4428472B4B6250655368566D597133743677397A2443264629
+  expiration: 300000 # 5 minutes in milliseconds
