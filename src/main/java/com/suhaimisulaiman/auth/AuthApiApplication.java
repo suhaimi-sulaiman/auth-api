@@ -1,4 +1,4 @@
-package com.suhaimisulaiman.auth_api;
+package com.suhaimisulaiman.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
